@@ -1,0 +1,45 @@
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.food-table {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+td,
+th {
+  border: 2px solid #595959;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 3px;
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(6, 59, 6);
+}
+
+.primary-color {
+  background-color: #517c2d;
+}
+
+/* th {
+  background: #f0e6cc;
+}
+
+.even {
+  background: #fbf8f0;
+}
+
+.odd {
+  background: #fefcf9;
+} */
