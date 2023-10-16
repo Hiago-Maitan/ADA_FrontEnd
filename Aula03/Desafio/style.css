@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 100vh;
+}
+
+#page>* {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  width: 10rem;
+  height: 3.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+h1 {
+  color: #1e293b;
+}
+
+h1+p {
+  color: #475569;
+  margin-top: 1.6rem;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+input,
+select {
+  background: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+
+  padding: 1rem 1rem;
+
+  font-size: 0.8rem;
+
+  color: #1e293b;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover {
+  border: 0.1rem solid #7c3aed;
+  outline: 0;
+}
+
+.label-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin: 0.2rem 0;
+}
+
+.label-wrapper input,
+select {
+  width: 100%;
+}
+
+option {
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+}
+
+form button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0.2rem;
+
+  background: #7c3aed;
+  border-radius: 0.4rem;
+  border: none;
+  width: 20%;
+
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+}
+
+form button:hover {
+  background: #9f67ff;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: small;
+}
+
+footer a {
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

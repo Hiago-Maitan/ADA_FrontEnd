@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajude a Causa - Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="page" class="flex">
+    <div class="container">
+
+      <header>
+        <img src="assets/logo.svg" class="logo" alt="logo da marca">
+      </header>
+
+      <main>
+        <div class="headline">
+          <h1>Acesse a nossa nova plataforma</h1>
+          <p>Faça sua doação, nos ajude a arrecadar fundos para uma causa nobre e
+            ganhe uma das nossas camisetas.</p>
+        </div>
+
+        <form action="http://localhost:3000/registrations" method="post">
+          <div class="label-wrapper">
+            <div>
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome">
+            </div>
+
+            <div>
+              <label for="age">Idade</label>
+              <input type="number" id="age" name="age" placeholder="Digite sua idade">
+            </div>
+          </div>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+          <div class="label-wrapper">
+            <div>
+              <label for="size">Tamanho da camiseta</label>
+              <select name="size" id="size">
+                <option value="">Selecione o tamanho</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="XG">XG</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="donation">Valor da Doação</label>
+              <input type="number" id="donation" name="donation" placeholder="Faça sua doação">
+            </div>
+          </div>
+
+          <h4>Categoria de inscrição</h4>
+          <div class="categories">
+            <input type="radio" id="3RUN" value="3RUN" name="3RUN">
+            <label for="3RUN">Corrida 3km</label>
+
+            <input type="radio" id="4RUN" value="4RUN" name="4RUN">
+            <label for="4RUN">Corrida 4km</label>
+
+            <input type="radio" id="5RUN" value="5RUN" name="5RUN">
+            <label for="5RUN">Corrida 5km</label>
+          </div>
+
+          <div class="btn-container">
+            <button type="submit">Doar</button>
+          </div>
+
+        </form>
+      </main>
+
+      <footer>
+        © Todos os direitos reservados 2023 | Desenvolvido por
+        <a href="view-source:https://portifolio-v2-psi.vercel.app/">Hiago Maitan</a>
+      </footer>
+    </div>
+
+    <img src="assets/img.jpg" alt="imagem da lateral de cor roxo">
+
+  </div>
+
+</body>
+
+</html>
