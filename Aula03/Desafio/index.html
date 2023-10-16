@@ -31,23 +31,23 @@
           <div class="label-wrapper">
             <div>
               <label for="name">Nome Completo</label>
-              <input type="text" id="name" name="name" placeholder="Digite seu nome">
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
             </div>
 
             <div>
               <label for="age">Idade</label>
-              <input type="number" id="age" name="age" placeholder="Digite sua idade">
+              <input type="number" min="0" id="age" name="age" placeholder="Digite sua idade" required>
             </div>
           </div>
 
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
           <div class="label-wrapper">
             <div>
               <label for="size">Tamanho da camiseta</label>
-              <select name="size" id="size">
-                <option value="">Selecione o tamanho</option>
+              <select name="size" id="size" required>
+                <option value="" disabled selected>Selecione o tamanho</option>
                 <option value="P">P</option>
                 <option value="M">M</option>
                 <option value="G">G</option>
@@ -58,19 +58,19 @@
 
             <div>
               <label for="donation">Valor da Doação</label>
-              <input type="number" id="donation" name="donation" placeholder="Faça sua doação">
+              <input type="number" min="0" id="donation" name="donation" placeholder="Faça sua doação" required>
             </div>
           </div>
 
           <h4>Categoria de inscrição</h4>
           <div class="categories">
-            <input type="radio" id="3RUN" value="3RUN" name="3RUN">
+            <input type="radio" id="RUN" value="3RUN" name="RUN">
             <label for="3RUN">Corrida 3km</label>
 
-            <input type="radio" id="4RUN" value="4RUN" name="4RUN">
+            <input type="radio" id="RUN" value="4RUN" name="RUN">
             <label for="4RUN">Corrida 4km</label>
 
-            <input type="radio" id="5RUN" value="5RUN" name="5RUN">
+            <input type="radio" id="RUN" value="5RUN" name="RUN" required>
             <label for="5RUN">Corrida 5km</label>
           </div>
 
