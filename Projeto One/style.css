@@ -1,7 +1,22 @@
+/* Styles Scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #513500;
+  border-radius: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,7 +51,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 10rem;
 }
 
@@ -47,4 +62,92 @@ nav ul li a {
 
 nav ul li a:hover {
   border-bottom: 2px solid #CB9C53;
+}
+
+.firstBanner-conatiner {
+  position: relative;
+  height: 584px;
+  background-image: url('./assets/cafe-da-manha-brasileiro-capa.jpg');
+  background-size: cover;
+}
+
+.firstBanner-conatiner h1 {
+  position: relative;
+  top: 145px;
+  color: #ffff;
+
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.firstBanner-conatiner button {
+  position: relative;
+  text-align: center;
+
+  top: 245px;
+  left: 40%;
+  
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #ffff;
+  background-color: #513500;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.firstBanner-conatiner button:hover {
+  background-color: #523c15;
+}
+
+/* Quem somos */
+
+main {
+  margin: 1.5rem;
+}
+
+main h2 {
+  color: #75551E;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main section {
+  display: inline-block;
+  width: 50%;
+  margin-left: 25%;
+  padding: 1.5rem 2.5rem;
+  font-size: 0.9rem;
+
+  color: #ffff;
+  background-color: #87652D;
+  border-radius: 0.4rem;
+}
+
+main section p {
+  margin-bottom: 1rem;
+}
+
+main section p span {
+  font-weight: 700;
+}
+
+/* Produtos */
+
+.flex-container {
+  border: 1px solid red;
+  padding: 0 10rem;
+}
+
+.products-container {
+  border: 1px solid red;
+  display: inline-block;
+}
+
+aside{
+  display: inline-block;
 }
