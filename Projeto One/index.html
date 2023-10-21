@@ -18,9 +18,9 @@
     <nav>
       <img src="assets/logo.png" alt="Logo da Ada Coffee" class="logo">
       <ul>
-        <li><a href="#QuemSomos">Quem somos</a></li>
-        <li><a href="#Produtos">Produtos</a></li>
-        <li><a href="#Duvidas">Dúvidas</a></li>
+        <li><a href="#quemSomos">Quem somos</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#whatsApp">Dúvidas</a></li>
       </ul>
     </nav>
   </header>
@@ -33,7 +33,7 @@
 
   <!-- Quem Somos -->
   <main>
-    <h2 id="QuemSomos">Quem somos</h2>
+    <h2 id="quemSomos">Quem somos</h2>
     <section>
       <p>
         Fazemos parte do grupo <span>ADA Tech</span> e promovemos encontros para devs de
@@ -53,22 +53,76 @@
   <!-- Produtos -->
   <div class="flex-container">
     <div class="products-container">
-      <h2>Produtos</h2>
+      <h2 id="produtos">Produtos</h2>
       <article>
         <figure>
-          <img src="" alt="Imagem do Bolo de Limão">
+          <img src="assets/boloLimão.webp" alt="Imagem do Bolo de Limão">
+          <figcaption>Bolo de Limão</figcaption>
+        </figure>
+        <h5>R$ 6,00 (pedaço)</h5>
+      </article>
+
+      <article>
+        <figure>
+          <img src="assets/BoloFuba.jpeg" alt="Imagem do Bolo de Limão">
+          <figcaption>Bolo de Fubá</figcaption>
+        </figure>
+        <h5>R$ 6,00 (pedaço)</h5>
+      </article>
+
+      <article>
+        <figure>
+          <img src="assets/BoloChocolate.jpeg" alt="Imagem do Bolo de Limão">
           <figcaption>Bolo de Limão</figcaption>
         </figure>
         <h5>R$ 6,00 (pedaço)</h5>
       </article>
     </div>
 
+    <div class="products-container">
+      <article>
+        <figure>
+          <img src="assets/cafeLeite.jpeg" alt="Imagem do Bolo de Limão">
+          <figcaption>Café com leite</figcaption>
+        </figure>
+        <h5>R$ 5,00</h5>
+      </article>
+
+      <article>
+        <figure>
+          <img src="assets/cafeTradicional.jpeg" alt="Imagem do Bolo de Limão">
+          <figcaption>Café Tradicional</figcaption>
+        </figure>
+        <h5>R$ 5,00</h5>
+      </article>
+
+      <article>
+        <figure>
+          <img src="assets/sucos.jpeg" alt="Imagem do Bolo de Limão">
+          <figcaption>Sucos Sabores</figcaption>
+        </figure>
+        <h5>R$ 8,00</h5>
+      </article>
+    </div>
+
     <!-- Tabela de horários -->
     <aside>
-      <h2>Horários do mês</h2>
+      <h2 id="whatsApp">Horários do mês</h2>
     </aside>
   </div>
 
+  <section class="form-container">
+    <div class="secondBanner-container">
+      <h1>AGENDE SEU HORÁRIO VIA WHATSAPP</h1>
+      <form action="">
+        <input type="text" placeholder="Digite seu nome">
+        <input type="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="(xx) 9 9999-9999">
+        <button>Agendar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="regexPhone.js"></script>
 </body>
 
 </html>

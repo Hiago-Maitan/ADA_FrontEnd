@@ -25,6 +25,7 @@ body {
   letter-spacing: 1px;
 }
 
+/* Navbar */
 header {
   width: 100%;
   height: 73px;
@@ -64,10 +65,12 @@ nav ul li a:hover {
   border-bottom: 2px solid #CB9C53;
 }
 
+/* First Banner */
+
 .firstBanner-conatiner {
   position: relative;
   height: 584px;
-  background-image: url('./assets/cafe-da-manha-brasileiro-capa.jpg');
+  background-image: url('./assets/banner01.jpg');
   background-size: cover;
 }
 
@@ -86,14 +89,14 @@ nav ul li a:hover {
 
   top: 245px;
   left: 40%;
-  
+
   padding: 1rem 1.5rem;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 2px;
 
   color: #ffff;
-  background-color: #513500;
+  background-color: #523c15;
 
   border-radius: 8px;
   border: none;
@@ -101,7 +104,7 @@ nav ul li a:hover {
 }
 
 .firstBanner-conatiner button:hover {
-  background-color: #523c15;
+  background-color: #513500;
 }
 
 /* Quem somos */
@@ -139,15 +142,109 @@ main section p span {
 /* Produtos */
 
 .flex-container {
-  border: 1px solid red;
+  border: 1px solid blue;
   padding: 0 10rem;
+  margin-bottom: 36px;
 }
 
 .products-container {
-  border: 1px solid red;
   display: inline-block;
 }
 
-aside{
+.products-container h2 {
+  color: #75551E;
+  margin-bottom: 34px;
+}
+
+.products-container article {
   display: inline-block;
+  height: 15rem;
+  width: 15rem;
+  background-color: #E5CE83;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  margin: 10px 0;
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+.products-container article figure img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.products-container figcaption {
+  font-weight: 700;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #99753C;
+}
+
+.products-container h5 {
+  color: #99753C;
+  font-size: 0.8rem;
+}
+
+aside {
+  display: inline-block;
+}
+
+/* Formulario */
+
+.form-container .secondBanner-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: url('./assets/banner02.png');
+  background-size: cover;
+}
+
+.form-container .secondBanner-container h1 {
+  position: relative;
+  top: 20%;
+  color: #513500;
+  text-align: center;
+}
+
+
+.form-container .secondBanner-container form {
+  margin-top: 10rem;
+  margin-left: 40%;
+}
+
+.form-container .secondBanner-container input {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 8px 43px;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.form-container .secondBanner-container input::placeholder {
+  text-align: center;
+}
+
+.form-container .secondBanner-container button {
+  text-align: center;
+
+  padding: 0.7rem 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #ffff;
+  background-color: #523c15;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 7%;
+}
+
+.form-container .secondBanner-container button:hover {
+  background-color: #513500;
 }
