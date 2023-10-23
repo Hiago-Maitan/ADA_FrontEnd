@@ -142,7 +142,7 @@ main section p span {
 /* Produtos */
 
 .flex-container {
-  border: 1px solid blue;
+  display: inline-block;
   padding: 0 10rem;
   margin-bottom: 36px;
 }
@@ -151,7 +151,7 @@ main section p span {
   display: inline-block;
 }
 
-.products-container h2 {
+.products-container h2, aside h2 {
   color: #75551E;
   margin-bottom: 34px;
 }
@@ -189,8 +189,33 @@ main section p span {
   font-size: 0.8rem;
 }
 
+/* Tabela de horários */
+
 aside {
-  display: inline-block;
+  display: block;
+  margin-top: -835px;
+  margin-left: 810px;
+}
+
+/* tabela css */
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+  text-align: center;
+}
+td, th {
+	padding: 3px;
+	width: 30px;
+	height: 25px;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
 }
 
 /* Formulario */
@@ -247,4 +272,45 @@ aside {
 
 .form-container .secondBanner-container button:hover {
   background-color: #513500;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #513500;
+
+  padding: 20px 24px;
+  color: #ffff;
+  font-size: 0.8rem;
+}
+
+footer .infos-company h5 {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+footer .infos-company a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffff;
+}
+
+footer .infos-company a:hover {
+  text-decoration: underline;
+}
+
+footer .infos-company,
+footer .other-infos {
+  display: inline-block;
+}
+
+footer .other-infos h5 {
+  display: inline-block;
+  margin-left: 15rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+footer .other-infos h5:hover {
+  text-decoration: underline;
 }
